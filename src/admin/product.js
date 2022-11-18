@@ -1,0 +1,4 @@
+class Product {
+  id;
+  name;
+}

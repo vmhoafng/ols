@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/setup.css" />
+    <link rel="stylesheet" href="../public/css/base.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./buyer.responesive.css" />
+    <script defer src="../routes/test.js"></script>
+    <script
+      src="https://kit.fontawesome.com/28d9bf82d6.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <input type="checkbox" name="toggle" id="Menu">
+    <div class="app flex flex-col item-center">
+      <header class="flex justify-between">
+        <div class="left">
+          <ul class="flex">
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="right flex">
+          <div class="icon"></div>
+          <div class="option">
+            <button>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14" height="28" width="28"><path stroke="#514e62" stroke-linecap="round" stroke-linejoin="round" d="M0.507528 0.5L2.9497 0.5L3.8197 9.15C3.85586 9.38845 3.97698 9.6058 4.16075 9.762C4.34451 9.9182 4.57854 10.0027 4.8197 10H11.1197C11.3378 10.0114 11.5536 9.95107 11.7341 9.82829C11.9147 9.7055 12.0501 9.52698 12.1197 9.32L13.4497 5.32C13.4993 5.16962 13.5125 5.0096 13.4881 4.85314C13.4638 4.69667 13.4026 4.54822 13.3097 4.42C13.2129 4.28368 13.0834 4.17381 12.9332 4.10043C12.783 4.02706 12.6167 3.99253 12.4497 4H3.2997"></path><path stroke="#514e62" stroke-linecap="round" stroke-linejoin="round" d="M10.9497 13.5C10.6736 13.5 10.4497 13.2761 10.4497 13C10.4497 12.7239 10.6736 12.5 10.9497 12.5C11.2258 12.5 11.4497 12.7239 11.4497 13C11.4497 13.2761 11.2258 13.5 10.9497 13.5Z"></path><path stroke="#514e62" stroke-linecap="round" stroke-linejoin="round" d="M4.44971 13.5C4.17356 13.5 3.94971 13.2761 3.94971 13C3.94971 12.7239 4.17356 12.5 4.44971 12.5C4.72585 12.5 4.94971 12.7239 4.94971 13C4.94971 13.2761 4.72585 13.5 4.44971 13.5Z"></path></svg>
+            </button>
+          </div>
+        </div>
+      </header>
+      <hr />
+          <form action="" class="search-bar">
+            <input type="text" placeholder="Searching" name="search" />
+          </form>
+      <main>
+        <menu>
+          <h2>Category</h2>       
+          <h3 href="#">Furniture</h3>
+          <ul>
+            <li>Sofa</li>
+            <li>Chair</li>
+            <li>Table</li>
+            <li>Lamp</li>
+          </ul>
+          <label for="Menu"></label>
+        </menu>
+            <section class="flex flex-col justify-center">
+              <div class="product">
+                <div class="card flex-center">
+                    <img src="/src/public/img/Clock-removebg-preview.png" alt="" />
+                  <div class="show flex-center flex-col">
+                    <button>Add to cart</button>
+                    <button>View detail</button>
+                  </div>
+                </div>
+                <div class="card flex-center">
+                  <img src="/src/public/img/Clock-removebg-preview.png" alt="" />
+                <div class="show flex-center flex-col">
+                  <button>Add to cart</button>
+                  <button>View detail</button>
+                </div>
+              </div>
+              <div class="card flex-center">
+                <img src="/src/public/img/Clock-removebg-preview.png" alt="" />
+              <div class="show flex-center flex-col">
+                <button>Add to cart</button>
+                <button>View detail</button>
+              </div>
+            </div> <div class="card flex-center">
+              <img src="/src/public/img/Clock-removebg-preview.png" alt="" />
+            <div class="show flex-center flex-col">
+              <button>Add to cart</button>
+              <button>View detail</button>
+            </div>
+          </div>
+              </div>
+              <ul class="flex justify-center">
+                <li class="prev">Prev</li>
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li class="next">Next</li>
+              </ul>
+            </section>
+      </main>
+      <div class="cart">
+          <h2 class="cart-title">Your Cart</h2>
+          <!-- Content -->
+          <div class="cart-content">
+            <div class="cart-box">
+              <img
+                src="/src/public/img/Electric_clock-removebg-preview.png"
+                alt="" />
+              <div class="cart-detail">
+                <div class="cart-product-title">Electric Clock</div>
+                <div class="cart-price">$120</div>
+                <input type="number" value="1" class="cart-quantity" />
+              </div>
+              <!-- Remove Cart -->
+              <i class="fa-solid fa-trash" id="cart-remove"></i>
+            </div>
+          </div>
+          <!-- Total -->
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+          </div>
+          <!-- Buy Button -->
+          <button type="button" class="btn-buy">Buy Now</button>
+          <!-- Cart Close -->
+          <i class="fa-solid fa-x" id="cart-close"></i>
+      </div>
+    </div>
+
+    <script src="/src/buyer/main.js"></script>
+  </body>
+</html>
